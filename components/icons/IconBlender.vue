@@ -1,0 +1,53 @@
+<template>
+  <svg :width="width" :height="height" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+    <linearGradient
+      id="a"
+      x1="1"
+      x2="45.7"
+      y1="25.8"
+      y2="25.8"
+      gradientTransform="matrix(1 0 0 -1 0 49.3)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0" stop-color="#ffa402" />
+      <stop offset="1" stop-color="#f80" />
+    </linearGradient>
+    <path
+      fill="url(#a)"
+      d="M39 16A470 470 0 0 1 26.1 5.6 2.5 2.5 0 1 0 23 9.4l5.4 4.6H9.5a2.5 2.5 0 1 0 0 5h8.8L2 31.5a2.5 2.5 0 1 0 3 4l10-7.7v.4C15 36 21.5 42 30 42s15.7-6 15.7-13.8c0-5-2.8-9.4-6.7-12.2z"
+    />
+    <ellipse cx="30.5" cy="27" fill="#fff" rx="9.8" ry="9" />
+    <path
+      d="M30.5 18c5.4 0 9.8 4 9.8 9s-4.4 9-9.8 9-9.8-4-9.8-9 4.4-9 9.8-9m0-.5c-5.7 0-10.3 4.3-10.3 9.5s4.6 9.5 10.3 9.5 10.3-4.3 10.3-9.5-4.6-9.5-10.3-9.5z"
+      opacity=".1"
+    />
+    <path
+      d="M30.5 17.5c5.7 0 10.3 4.3 10.3 9.5s-4.6 9.5-10.3 9.5-10.3-4.3-10.3-9.5 4.6-9.5 10.3-9.5m0-.5c-6 0-10.8 4.5-10.8 10s4.9 10 10.8 10 10.8-4.5 10.8-10-4.9-10-10.8-10z"
+      opacity=".1"
+    />
+    <ellipse cx="30.5" cy="27" fill="#0370c8" rx="5.5" ry="5" />
+    <path
+      d="M30.5 21.5c3.3 0 6 2.5 6 5.5s-2.7 5.5-6 5.5-6-2.5-6-5.5 2.7-5.5 6-5.5m0-.5c-3.6 0-6.5 2.7-6.5 6s3 6 6.5 6 6.5-2.7 6.5-6-3-6-6.5-6z"
+      opacity=".1"
+    />
+    <path
+      d="M30.5 22c3 0 5.5 2.2 5.5 5s-2.5 5-5.5 5-5.5-2.2-5.5-5 2.5-5 5.5-5m0-.5c-3.3 0-6 2.5-6 5.5s2.7 5.5 6 5.5 6-2.5 6-5.5-2.7-5.5-6-5.5z"
+      opacity=".1"
+    />
+  </svg>
+</template>
+
+<script>
+export default {
+  props: {
+    width: {
+      type: Number,
+      default: 36,
+    },
+    height: {
+      type: Number,
+      default: 36,
+    },
+  },
+}
+</script>
