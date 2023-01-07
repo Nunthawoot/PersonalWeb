@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-white">
+  <div class="flex flex-col min-h-screen bg-darkBlue">
     <TheHeader />
     <nuxt />
     <TheFooter />
@@ -11,7 +11,7 @@ import TheFooter from '~/components/common/TheFooter'
 export default {
   components: {
     TheHeader,
-    TheFooter,
-  },
+    TheFooter
+  }
 }
 </script>

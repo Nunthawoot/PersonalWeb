@@ -1,14 +1,23 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es2021: true,
+    node: true
   },
-  extends: ['plugin:vue/vue3-essential', 'standard'],
-  overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    parser: 'babel-eslint'
   },
-  plugins: ['vue'],
-  rules: {},
+  extends: ['@nuxtjs', 'prettier', 'prettier/vue', 'plugin:prettier/recommended', 'plugin:nuxt/recommended'],
+  plugins: ['prettier'],
+  // add your custom rules here
+  rules: {
+    'no-console': 'off',
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: []
+      }
+    ],
+    'space-before-function-paren': 'off'
+  }
 }

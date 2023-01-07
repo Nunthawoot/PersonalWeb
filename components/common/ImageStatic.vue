@@ -17,20 +17,20 @@ export default {
   props: {
     src: {
       type: String,
-      default: '',
+      default: ''
     },
     alt: {
       type: String,
-      default: '',
+      default: ''
     },
     aspactW: {
       type: Number,
-      default: 16,
+      default: 16
     },
     aspactH: {
       type: Number,
-      default: 9,
-    },
+      default: 9
+    }
   },
   computed: {
     srcComputed() {
@@ -39,8 +39,8 @@ export default {
     },
     classComputed() {
       return `aspect-w-${this.aspactW} aspect-h-${this.aspactH}`
-    },
-  },
+    }
+  }
 }
 </script>
 

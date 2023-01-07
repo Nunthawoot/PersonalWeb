@@ -17,13 +17,13 @@
 import IconN from '~/components/icons/IconN'
 export default {
   components: {
-    IconN,
+    IconN
   },
   methods: {
     redirect(value) {
       this.$router.push({ path: value })
-    },
-  },
+    }
+  }
 }
 </script>
 <style lang="postcss">
