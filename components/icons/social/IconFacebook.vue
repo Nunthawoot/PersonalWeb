@@ -1,13 +1,11 @@
 <template>
-  <svg :width="width" :height="height" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <path :fill="fill" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z" />
+  <svg :width="width" :height="height" :fill="stroke" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
     <path
-      :fill="stroke"
-      d="M8.6 9.2c0-1.6 1-2.5 2.3-2.5.6 0 1.6.5 2 1L22.7 21V9.2c0-1.6 1-2.5 2.4-2.5 1.3 0 2.3 1 2.3 2.5v17.6c0 1.5-1 2.4-2.3 2.4a3 3 0 0 1-2-1l-9.8-13v11.6c0 1.5-1 2.4-2.4 2.4s-2.3-.9-2.3-2.4V9.2z"
+      :stroke="stroke"
+      d="M25 3a22 22 0 0 0-3.3 43.7V30.8h-5.4V25h5.4v-3.8c0-6.4 3.1-9.2 8.4-9.2 2.5 0 3.9.2 4.5.3v5H31c-2.2 0-3 2.2-3 4.6V25h6.6l-1 5.8H28v16A22 22 0 0 0 25 3z"
     />
   </svg>
 </template>
-
 <script>
 import setColors from '~/utils/setColors'
 export default {
@@ -22,10 +20,7 @@ export default {
     },
     fill: {
       type: String,
-      default: 'white',
-      validator(value) {
-        return ['black', 'gray', 'white'].includes(value)
-      }
+      default: 'none'
     },
     stroke: {
       type: String,

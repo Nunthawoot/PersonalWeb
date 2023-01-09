@@ -1,6 +1,6 @@
 <template>
-  <div class="p-7">
-    <div class="mb-4 font-semibold text-2xl">
+  <div>
+    <div class="font-semibold text-2xl">
       <span class="pb-2">Experience</span>
     </div>
     <div>
@@ -14,7 +14,7 @@
 import EducationCard from '~/components/resume/EducationCard'
 export default {
   components: {
-    EducationCard,
+    EducationCard
   },
   data() {
     return {
@@ -24,17 +24,17 @@ export default {
           name: 'Creatder .co',
           degrees: 'Frontend Development',
           description:
-            'Duis posuere, quam non imperdiet egestas, eros enim mattis mauris, in posuere lacus arcu quis felis. Etiam interdum erat non enim venenatis fermentum.',
+            'Duis posuere, quam non imperdiet egestas, eros enim mattis mauris, in posuere lacus arcu quis felis. Etiam interdum erat non enim venenatis fermentum.'
         },
         {
           year: '2020',
           name: 'Creatder .co',
           degrees: 'Trainee Frontend Development',
           description:
-            'Duis posuere, quam non imperdiet egestas, eros enim mattis mauris, in posuere lacus arcu quis felis. Etiam interdum erat non enim venenatis fermentum.',
-        },
-      ],
+            'Duis posuere, quam non imperdiet egestas, eros enim mattis mauris, in posuere lacus arcu quis felis. Etiam interdum erat non enim venenatis fermentum.'
+        }
+      ]
     }
-  },
+  }
 }
 </script>

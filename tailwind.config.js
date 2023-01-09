@@ -9,9 +9,18 @@ module.exports = {
   theme: {
     colors: {
       darkBlue: '#022C43',
-      prussianBlue: '#053F5E',
+      sherpaBlue: '#022C47',
+      prussianBlue: '#4F8A8B',
       darkCerulean: '#115173',
-      Gold: '#FFD700'
+      Gold: '#FFD700',
+      white: '#FFFFFF',
+      gray: '#8892B0',
+      black: '#2B2B28',
+      white2: '#EEEEEE',
+      black2: '#222831',
+      black50: '#4a576b',
+      black100: '#12151a'
+
     },
     backgroundColor: (theme) => ({
       ...theme('colors'),

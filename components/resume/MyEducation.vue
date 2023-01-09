@@ -1,6 +1,6 @@
 <template>
-  <div class="p-7">
-    <div class="mb-4 font-semibold text-2xl">
+  <div>
+    <div class="font-semibold text-2xl">
       <span class="pb-2">Education</span>
     </div>
     <div>

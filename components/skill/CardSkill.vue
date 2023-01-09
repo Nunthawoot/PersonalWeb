@@ -1,8 +1,8 @@
 <template>
-  <div class="rounded-lg p-4 shadow-sm space-y-4 hover:shadow-md hover:rotate-10">
+  <div class="bg-white color rounded-lg shadow-lg space-y-2 p-4 grid justify-center hover:shadow-md">
     <!-- <ImageStatic /> -->
-    <components v-bind:is="iconName" :width="100" :height="100" />
-    <div>{{ name }}</div>
+    <components v-bind:is="iconName" :width="100" :height="100" class="" />
+    <div class="rounded-lg">{{ name }}</div>
   </div>
 </template>
 <script>
@@ -32,12 +32,30 @@ export default {
   props: {
     name: {
       type: String,
-      default: '',
+      default: ''
     },
     iconName: {
       type: String,
-      default: '',
-    },
-  },
+      default: ''
+    }
+  }
 }
 </script>
+<style lang="postcss" scoped>
+.cardBg {
+  background-image: linear-gradient(to top, #09203f 20%, #ffffff 100%);
+}
+.color {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+
+.color:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+</style>

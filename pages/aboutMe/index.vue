@@ -1,13 +1,13 @@
 <template>
   <div class="min-h-screen">
-    <MySkill />
+    <AboutMe />
   </div>
 </template>
 <script>
-import MySkill from '~/components/skill/MySkill'
+import AboutMe from '~/components/aboutMe/AboutMe'
 export default {
   components: {
-    MySkill
+    AboutMe
   }
 }
 </script>

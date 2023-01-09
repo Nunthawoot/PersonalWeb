@@ -1,13 +1,13 @@
 <template>
   <div class="min-h-screen">
-    <Resume />
+    <MyResume />
   </div>
 </template>
 <script>
-import Resume from '~/components/resume/Resume'
+import MyResume from '~/components/resume/MyResume'
 export default {
   components: {
-    Resume,
+    MyResume,
   },
 }
 </script>

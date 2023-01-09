@@ -1,9 +1,9 @@
 <template>
-  <div class="py-8 text-center">
-    <p class="font-semibold text-4xl mb-8">Other</p>
-    <!-- <IconJs :width="64" :height="64" /> -->
-    <div class="flex justify-center">
-      <div class="flex gap-x-6 w-1/2 justify-center">
+  <div>
+    <div class="bg-white rounded-lg p-6 text-center shadow-lg">
+      <p class="font-semibold text-2xl">Tools & Platforms</p>
+      <!-- <IconJs :width="64" :height="64" /> -->
+      <div class="grid grid-cols-3 gap-4">
         <article v-for="(skill, index) in skillList" :key="index">
           <CardSkill :name="skill.name" :iconName="skill.iconName" />
         </article>
@@ -15,18 +15,18 @@
 import CardSkill from '~/components/skill/CardSkill'
 export default {
   components: {
-    CardSkill,
+    CardSkill
   },
   data() {
     return {
       skillList: [
         {
           name: 'Github',
-          iconName: 'IconGithub',
+          iconName: 'IconGithub'
         },
-        { name: 'Basic Blender', iconName: 'IconBlender' },
-      ],
+        { name: 'Basic Blender', iconName: 'IconBlender' }
+      ]
     }
-  },
+  }
 }
 </script>

@@ -1,9 +1,8 @@
 <template>
-  <svg :width="width" :height="height" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <path :fill="fill" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z" />
+  <svg :width="width" :height="height" :fill="stroke" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
     <path
-      :fill="stroke"
-      d="M8.6 9.2c0-1.6 1-2.5 2.3-2.5.6 0 1.6.5 2 1L22.7 21V9.2c0-1.6 1-2.5 2.4-2.5 1.3 0 2.3 1 2.3 2.5v17.6c0 1.5-1 2.4-2.3 2.4a3 3 0 0 1-2-1l-9.8-13v11.6c0 1.5-1 2.4-2.4 2.4s-2.3-.9-2.3-2.4V9.2z"
+      :stroke="stroke"
+      d="M32 6a26 26 0 1 0 0 52 26 26 0 0 0 0-52zm-7 38h-5V26h5v18zm-2.5-20C21 24 20 22.9 20 21.5s1-2.5 2.5-2.5 2.5 1 2.5 2.5c0 1.4-1 2.5-2.5 2.5zM44 44h-5v-9c0-3-1.4-4-3-4-1.4 0-3 1-3 4v9h-5V26h5v3c.3-1 2-3 5-3 4 0 6 3 6 8v10z"
     />
   </svg>
 </template>
@@ -22,10 +21,7 @@ export default {
     },
     fill: {
       type: String,
-      default: 'white',
-      validator(value) {
-        return ['black', 'gray', 'white'].includes(value)
-      }
+      default: 'none'
     },
     stroke: {
       type: String,
