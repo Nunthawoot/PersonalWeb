@@ -1,7 +1,7 @@
 <template>
   <article class="scroller">
     <section><MyHome /></section>
-    <section class="bg-white">
+    <section class="bg-white2">
       <MySkill />
     </section>
     <section>

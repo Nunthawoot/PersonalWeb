@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen grid content-center">
-    <MyEducation />
+  <div class="min-h-screen grid content-center container">
     <MyExperience />
+    <MyEducation />
   </div>
 </template>
 <script>

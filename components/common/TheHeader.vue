@@ -3,7 +3,7 @@
     <div class="flex justify-between container py-3">
       <div class="space-x-4 flex items-center">
         <button
-          class="text-2xl border-2 px-2 rounded-lg transition ease-in-out delay-150 hover:text-Gold hover:border-black2 hover:bg-black2 duration-300"
+          class="text-2xl border-2 px-2 rounded-lg transition ease-in-out delay-150 hover:text-gold hover:border-black2 hover:bg-black2 duration-300"
         >
           N
         </button>

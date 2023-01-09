@@ -1,16 +1,16 @@
 <template>
-  <div class="grid content-center bg-Gold min-h-screen container">
+  <div class="grid content-center bg-gold min-h-screen container">
     <div class="relative w-full items-center">
-      <p class="text-base font-medium text-black50">Hello World, I'm</p>
-      <!-- <p class="text-Gold">Hello, I'm</p> -->
+      <p class="text-base font-medium text-black50">Hello World,</p>
+      <!-- <p class="text-gold">Hello, I'm</p> -->
       <!-- <div class="content relative -mt-6">
         <h2 class="font-semibold text-6xl absolute">Nunthawoot Saenchaiyaphum</h2>
         <h2 class="font-semibold text-6xl absolute">Nunthawoot Saenchaiyaphum</h2>
         <p class="font-semibold text-6xl text-white">Nunthawoot Saenchaiyaphum</p>
       </div> -->
-      <p class="text-6xl font-bold text-black100 -mt-3 -ml-1">Nunthawoot S.</p>
+      <p class="text-6xl font-bold text-black100 -mt-3 -ml-1">Front-end Developer</p>
 
-      <p class="font-semibold text-4xl text-black2 -mt-3">Front-end Developer</p>
+      <p class="font-semibold text-2xl text-black2 -mt-3">I'm Nunthawoot S.</p>
       <div class="text-xl font-light w-2/3 mt-6 text-black2">
         <p>
           a front-end developer. a passionate approach to bringing you programming.<br />
@@ -21,7 +21,7 @@
 
       <div class="py-8">
         <button
-          class="bg-white2 text-black rounded-full px-6 py-3 text-sm shadow-md hover:bg-blue-500 hover:text-Gold cursor-pointer"
+          class="bg-white2 text-black rounded-full px-6 py-3 text-sm shadow-md hover:bg-blue-500 hover:text-gold cursor-pointer"
         >
           Contact
         </button>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-Gold">
+  <div class="flex flex-col min-h-screen bg-gold">
     <TheHeader class=" fixed z-40 w-full" />
     <div class="flex">
       <LeftSidebar class="min-h-screen" />

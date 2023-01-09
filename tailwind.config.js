@@ -12,15 +12,15 @@ module.exports = {
       sherpaBlue: '#022C47',
       prussianBlue: '#4F8A8B',
       darkCerulean: '#115173',
-      Gold: '#FFD700',
+      gold: '#FFD700',
+      gold100: '#ffbd1d',
       white: '#FFFFFF',
+      white2: '#f8f8f8',
       gray: '#8892B0',
       black: '#2B2B28',
-      white2: '#EEEEEE',
       black2: '#222831',
       black50: '#4a576b',
       black100: '#12151a'
-
     },
     backgroundColor: (theme) => ({
       ...theme('colors'),
@@ -44,7 +44,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '1rem'
+      padding: '8rem'
     },
     extend: {
       rotate: {

@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white color rounded-lg shadow-lg space-y-2 p-4 grid justify-center hover:shadow-md">
+  <div class="space-y-2 p-4 grid justify-center">
     <!-- <ImageStatic /> -->
-    <components v-bind:is="iconName" :width="100" :height="100" class="" />
+    <components v-bind:is="iconName" :width="50" :height="50" />
     <div class="rounded-lg">{{ name }}</div>
   </div>
 </template>

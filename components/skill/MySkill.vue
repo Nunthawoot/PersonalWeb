@@ -1,8 +1,11 @@
 <template>
-  <div class="min-h-screen grid grid-cols-3 gap-8 container content-center">
-    <SkillFrontEnd />
-    <SkillBackEnd />
-    <SkillOther />
+  <div class="min-h-screen container grid content-center">
+    <!-- <div class=" text-4xl text-gold">My Skill</div> -->
+    <div class="grid grid-cols-3 gap-8">
+      <SkillFrontEnd />
+      <SkillBackEnd />
+      <SkillOther />
+    </div>
   </div>
 </template>
 <script>

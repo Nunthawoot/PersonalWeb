@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class=" bg-white rounded-lg shadow-lg">
     <div class="rounded-lg p-6 text-center">
-      <p class="font-semibold text-2xl">Libraries & framework</p>
+      <p class="font-semibold text-xl mb-10">Libraries & framework</p>
       <!-- <IconJs :width="64" :height="64" /> -->
 
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-2 gap-4">
         <article v-for="(skill, index) in skillList" :key="index">
           <CardSkill :name="skill.name" :iconName="skill.iconName" />
         </article>
