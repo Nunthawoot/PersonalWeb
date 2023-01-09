@@ -28,7 +28,7 @@ img {
   height: 300px;
   width: 300px;
 }
-.text-glow:hover {
+/* .text-glow:hover {
   background-clip: text;
   background-image: linear-gradient(
     to right,
@@ -49,5 +49,5 @@ img {
   padding: calc(--stroke-width / 2);
   -webkit-text-stroke-color: transparent;
   -webkit-text-stroke-width: 8px;
-}
+} */
 </style>
