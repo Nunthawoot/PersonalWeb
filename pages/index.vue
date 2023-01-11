@@ -1,11 +1,14 @@
 <template>
   <article class="scroller">
     <section><MyHome /></section>
-    <section class="bg-white2">
+    <section id="skill" class="bg-white2">
       <MySkill />
     </section>
     <section>
       <MyResume />
+    </section>
+    <section>
+      <MyContact />
     </section>
   </article>
 </template>
@@ -14,11 +17,13 @@
 import MyHome from '~/components/MyHome'
 import MyResume from '~/components/resume/MyResume'
 import MySkill from '~/components/skill/MySkill'
+import MyContact from '~/components/contact/MyContact'
 export default {
   components: {
     MyHome,
     MyResume,
-    MySkill
+    MySkill,
+    MyContact
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="font-semibold text-2xl">
-      <span class="pb-2">Education</span>
+    <div>
+      <p class="text-4xl font-semibold text-black2">Education</p>
     </div>
     <div>
       <div v-for="({ year, name, degrees, description }, index) in education" :key="index">

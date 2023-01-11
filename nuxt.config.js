@@ -8,17 +8,17 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'webPorfolio',
+    title: 'Nunthawoot',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'format-detection', content: 'telephone=no' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -36,19 +36,19 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     // '@nuxtjs/tailwindcss',
-    '@nuxt/postcss8',
+    '@nuxt/postcss8'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/axios'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
       plugins: {
         tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
-  },
+        autoprefixer: {}
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="grid content-center bg-gold min-h-screen container">
     <div class="relative w-full items-center">
-      <p class="text-base font-medium text-black50">Hello World,</p>
+      <p class="text-base font-medium text-black50">Hello World, I'm </p>
       <!-- <p class="text-gold">Hello, I'm</p> -->
       <!-- <div class="content relative -mt-6">
         <h2 class="font-semibold text-6xl absolute">Nunthawoot Saenchaiyaphum</h2>
@@ -10,10 +10,10 @@
       </div> -->
       <p class="text-6xl font-bold text-black100 -mt-3 -ml-1">Front-end Developer</p>
 
-      <p class="font-semibold text-2xl text-black2 -mt-3">I'm Nunthawoot S.</p>
+      <p class="font-semibold text-2xl text-black2 -mt-3">Nunthawoot S.</p>
       <div class="text-xl font-light w-2/3 mt-6 text-black2">
         <p>
-          a front-end developer. a passionate approach to bringing you programming.<br />
+          my passionate approach to bringing you programming.<br />
           I am experienced in developing web and desktop applications. I'm focused on <br />
           creating beautiful and user-friendly applications while writing clean code.
         </p>

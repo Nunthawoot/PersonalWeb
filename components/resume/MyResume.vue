@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen grid content-center container">
+  <div class="min-h-screen grid content-center container space-y-8">
     <MyExperience />
     <MyEducation />
   </div>

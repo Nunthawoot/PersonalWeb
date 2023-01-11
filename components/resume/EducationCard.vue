@@ -7,7 +7,7 @@
 
     <!-- <div>{{ yearProps }}</div> -->
     <div class="p-4">
-      <div class="font-semibold">{{ degreesProps }}</div>
+      <div class="font-semibold text-black2">{{ degreesProps }}</div>
       <div class="text-sm">{{ descriptionProps }}</div>
     </div>
   </div>

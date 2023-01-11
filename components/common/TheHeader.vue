@@ -1,9 +1,10 @@
 <template>
-  <header class="">
+  <header class="bg-white2">
     <div class="flex justify-between container py-3">
       <div class="space-x-4 flex items-center">
         <button
           class="text-2xl border-2 px-2 rounded-lg transition ease-in-out delay-150 hover:text-gold hover:border-black2 hover:bg-black2 duration-300"
+          @click.prevent="redirect('/')"
         >
           N
         </button>
@@ -13,11 +14,11 @@
       </div> -->
       </div>
       <div class="flex gap-x-8">
-        <button class="glow-on-hover" @click.prevent="redirect('/aboutMe')">About Me</button>
-        <button class="glow-on-hover" @click.prevent="redirect('/resume')">Resume</button>
-        <button class="glow-on-hover" @click.prevent="redirect('/skill')">Skill</button>
-        <button class="glow-on-hover">Portfolio</button>
-        <button class="glow-on-hover">Contact</button>
+        <button class="buttonFrom from-center" @click.prevent="redirect('/aboutMe')">About Me</button>
+        <button class="buttonFrom from-center" @click.prevent="redirect('/resume')">Resume</button>
+        <button class="buttonFrom from-center" @click.prevent="redirect('/skill')">Skill</button>
+        <button class="buttonFrom from-center">Portfolio</button>
+        <button class="buttonFrom from-center">Contact</button>
       </div>
     </div>
   </header>
@@ -35,70 +36,64 @@ export default {
   }
 }
 </script>
-<style lang="postcss">
-.glow-on-hover {
-  width: auto;
-  height: auto;
-  border: none;
-  outline: none;
-  /* background: #022c47; */
-  cursor: pointer;
+<style lang="postcss" scoped>
+.buttonFrom {
   position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  @apply p-3 text-black2;
+  color: var(--inv);
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
 }
 
-.glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-.glow-on-hover:active {
-  /* color: #022c47; */
-}
-
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
+.buttonFrom:before,
+.buttonFrom:after {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
-  /* background: #022c47; */
-  left: 0;
+  transition: inherit;
+  z-index: -1;
+}
+
+.buttonFrom:hover {
+  /* color: rgb(238, 238, 106); */
+  transition-delay: 0.5s;
+  /* background: rgb(67, 65, 65); */
+}
+
+.buttonFrom:hover:before {
+  transition-delay: 0s;
+}
+
+.buttonFrom:hover:after {
+  /* background: #333; */
+  transition-delay: 0.35s;
+}
+
+.from-center:before {
   top: 0;
-  border-radius: 10px;
+  left: 50%;
+  height: 100%;
+  width: 0;
+  border: 1px solid #888;
+  border-left: 0;
+  border-right: 0;
 }
 
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+.from-center:after {
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: var(--inv);
+}
+
+.from-center:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+.from-center:hover:after {
+  top: 0;
+  height: 100%;
 }
 </style>

@@ -1,24 +1,40 @@
 <template>
-  <div class="container">
-    <div class="flex my-20">
-      <div>
-        <figure class="bg-white shadow-md">
-          <img
-            src="https://images.pexels.com/photos/4709288/pexels-photo-4709288.jpeg?auto=compress&cs=tinysrgb&w=1600"
-            class="object-fill"
-          />
-        </figure>
+  <div class="min-h-screen grid content-center container">
+    <div class="text-6xl font-semibold mb-8 text-black">About Me</div>
+    <div class=" flex gap-8">
+      <div class="space-y-8 text-black2">
+        <!-- <p>
+          Hello, my name is Nunthawoot(Toyo). with over 3 years of experience developing websites and building tools to
+          help businesses grow. I am currently working as a front-end developer in real estate.
+        </p> -->
+
+        <p>
+          Hi, I'm Nanthawut. I'm a front-end developer. It's very difficult for me to explain myself. This is my first
+          website creation for myself. After I started working on web development from 2020, now I am working as a
+          frontend developer. I like the job I'm doing right now. it gives me a headache But I'm happy I did.
+        </p>
+
+        <!-- <p>
+          My main job is to develop a front-end for administrators to manage web data and develop features. to meet
+          their needs. I have experience using Web3 to develop a cross-chain bridge.
+        </p> -->
+
+        <p>
+          Right now I work with the tiny team at Creater.co from korat, Thailand.My main job is to develop tools for
+          admins to manage web content and develop features for users.
+        </p>
+
+        <p>
+          I spend my time reading, gaming, and traveling whenever I'm not working on projects or coding.
+        </p>
+
+        <p>
+          Finally, I want to learn new things. Although sometimes I don't do very well, But I will try my best. I hope
+          you like my website. Thank you.
+        </p>
       </div>
-      <div>
-        <p>ABOUT</p>
-        <!-- <div>
-          <p>
-            focused on creating <span class="font-bold">beautiful</span> and
-            <span class="font-bold">user friendly</span>
-          </p>
-          <p>applications while writing <span class="font-bold">clean code</span> and</p>
-          <p>learned <span class="font-bold">new skill</span></p>
-        </div> -->
+      <div class=" w-full grid justify-items-center">
+        <img src="~/static/img/myself2.jpg" class=" rounded-lg" />
       </div>
     </div>
   </div>
@@ -27,27 +43,15 @@
 img {
   height: 300px;
   width: 300px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
 }
-/* .text-glow:hover {
-  background-clip: text;
-  background-image: linear-gradient(
-    to right,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  color: var(--color-background);
-  font-size: 64px;
-  font-weight: 600px;
-  letter-spacing: 2px;
-  padding: calc(--stroke-width / 2);
-  -webkit-text-stroke-color: transparent;
-  -webkit-text-stroke-width: 8px;
-} */
+img:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
 </style>
