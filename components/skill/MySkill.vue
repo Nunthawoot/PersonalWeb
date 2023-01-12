@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen grid content-center">
-    <!-- <div class=" text-4xl text-gold">My Skill</div> -->
     <div class=" text-6xl font-semibold mb-8">Skills</div>
     <div class="grid grid-cols-3 gap-8">
       <SkillFrontEnd />
