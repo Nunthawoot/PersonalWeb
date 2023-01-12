@@ -1,6 +1,9 @@
 <template>
-  <div>Contact Form</div>
+  <div class="min-h-screen container"><MyContact /></div>
 </template>
 <script>
-export default {}
+import MyContact from '~/components/contact/MyContact'
+export default {
+  components: { MyContact }
+}
 </script>

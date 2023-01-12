@@ -3,7 +3,7 @@
     <section class="container"><MyHome /></section>
     <section id="skill" class="flex">
       <div class="container flex gap-8">
-        <MySkill class=" bg-gold50 px-8" />
+        <MySkill class="bg-gold50 px-8" />
         <MyResume />
       </div>
     </section>

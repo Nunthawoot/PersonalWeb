@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen grid content-center container">
+  <div class="min-h-screen grid content-center">
     <div class="text-6xl font-semibold mb-8 text-black">About Me</div>
     <div class="flex gap-8">
       <div class="space-y-8 text-black2">
