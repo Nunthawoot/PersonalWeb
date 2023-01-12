@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col min-h-screen bg-gold">
-    <TheHeader class="fixed z-40 w-full" />
+    <TheHeader class="w-full" />
     <div class="flex">
-      <LeftSidebar class="min-h-screen" />
+      <LeftSidebar v-if="$device.isDesktopOrTablet" class="min-h-screen" />
       <div class="overflow-y-auto w-full"><nuxt /></div>
-      <RightSidebar class="min-h-screen" />
+      <RightSidebar v-if="$device.isDesktopOrTablet" class="min-h-screen" />
     </div>
     <TheFooter />
   </div>

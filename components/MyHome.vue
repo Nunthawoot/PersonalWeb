@@ -1,17 +1,11 @@
 <template>
   <div class="grid content-center bg-gold min-h-screen">
-    <div class="relative w-full items-center">
+    <div :class="$device.isDesktop ? '' : 'text-center'" class="relative w-full">
       <p class="text-base font-medium text-black50">Hello World, I'm</p>
-      <!-- <p class="text-gold">Hello, I'm</p> -->
-      <!-- <div class="content relative -mt-6">
-        <h2 class="font-semibold text-6xl absolute">Nunthawoot Saenchaiyaphum</h2>
-        <h2 class="font-semibold text-6xl absolute">Nunthawoot Saenchaiyaphum</h2>
-        <p class="font-semibold text-6xl text-white">Nunthawoot Saenchaiyaphum</p>
-      </div> -->
       <p class="text-6xl font-bold text-black100 -mt-3 -ml-1">Front-end Developer</p>
 
       <p class="font-semibold text-2xl text-black2 -mt-3">Nunthawoot S.</p>
-      <div class="text-xl font-light w-2/3 mt-6 text-black2">
+      <div :class="$device.isDesktop ? 'w-2/3' : 'w-full'" class="text-xl font-light mt-6 text-black2">
         <p>
           my passionate approach to bringing you programming.<br />
           I am experienced in developing web and desktop applications. I'm focused on <br />
@@ -21,6 +15,7 @@
 
       <div class="py-8">
         <button
+          @click.prevent="onClickContact()"
           class="font-semibold bg-white2 text-black rounded-full px-6 py-3 text-sm shadow-md hover:bg-blue-500 hover:text-gold100 cursor-pointer"
         >
           Contact
@@ -29,6 +24,15 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  methods: {
+    onClickContact() {
+      this.$emit('onClickContact')
+    }
+  }
+}
+</script>
 <style lang="postcss" scoped>
 .content h2 {
   color: #eeeeee;

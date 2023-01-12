@@ -37,11 +37,12 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     // '@nuxtjs/tailwindcss',
     '@nuxt/postcss8',
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/device'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/device'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -53,7 +54,9 @@ export default {
     }
   },
   env: {
-    MAILJET_API_KEY: process.env.MAILJET_API,
-    MAILJET_SECRET_KEY: process.env.MAILJET_SK
+    EMAILJS_PUBLIC_KEY: process.env.EMAILJS_PUBLIC_KEY,
+    EMAILJS_PRIVATE_KEY: process.env.EMAILJS_PRIVATE_KEY,
+    EMAILJS_TEMPLATE_KEY: process.env.EMAILJS_TEMPLATE_KEY,
+    EMAILJS_SERVICE_ID: process.env.EMAILJS_SERVICE_ID
   }
 }

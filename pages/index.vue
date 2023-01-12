@@ -1,13 +1,13 @@
 <template>
-  <article class="scroller">
-    <section class="container"><MyHome /></section>
-    <section id="skill" class="flex">
-      <div class="container flex gap-8">
-        <MySkill class="bg-gold50 px-8" />
-        <MyResume />
-      </div>
+  <article :class="$device.isDesktopOrTablet ? 'container' : ''" class="scroller">
+    <section><MyHome @onClickContact="clickContact('contact')" /></section>
+    <section id="skill">
+      <MySkill />
     </section>
-    <section class="container">
+    <section>
+      <MyResume />
+    </section>
+    <section id="contact">
       <MyContact />
     </section>
   </article>
@@ -24,6 +24,12 @@ export default {
     MyResume,
     MySkill,
     MyContact
+  },
+  methods: {
+    clickContact(name) {
+      const elmntToView = document.getElementById(name)
+      elmntToView.scrollIntoView(true)
+    }
   }
 }
 </script>
