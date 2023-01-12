@@ -13,6 +13,7 @@ module.exports = {
       prussianBlue: '#4F8A8B',
       darkCerulean: '#115173',
       gold: '#FFD700',
+      gold50: '#ffe767',
       gold100: '#ffbd1d',
       white: '#FFFFFF',
       white2: '#f8f8f8',
@@ -20,7 +21,8 @@ module.exports = {
       black: '#2B2B28',
       black2: '#222831',
       black50: '#4a576b',
-      black100: '#12151a'
+      black100: '#12151a',
+      orange: '#db421a'
     },
     backgroundColor: (theme) => ({
       ...theme('colors'),

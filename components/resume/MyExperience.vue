@@ -23,15 +23,13 @@ export default {
           year: '2020 - Current',
           name: 'Creatder .co',
           degrees: 'Frontend Development',
-          description:
-            'Duis posuere, quam non imperdiet egestas, eros enim mattis mauris, in posuere lacus arcu quis felis. Etiam interdum erat non enim venenatis fermentum.'
+          description: ['Develop websites to make users work better.', 'Developing a Cross-Chain Bridge with Web3.']
         },
         {
           year: '2020',
           name: 'Creatder .co',
           degrees: 'Trainee Frontend Development',
-          description:
-            'Duis posuere, quam non imperdiet egestas, eros enim mattis mauris, in posuere lacus arcu quis felis. Etiam interdum erat non enim venenatis fermentum.'
+          description: ['Develop websites to make users work better.']
         }
       ]
     }

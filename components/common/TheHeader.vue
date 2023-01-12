@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white2">
+  <header class="bg-white2 shadow">
     <div class="flex justify-between container py-3">
       <div class="space-x-4 flex items-center">
         <button
@@ -15,9 +15,8 @@
       </div>
       <div class="flex gap-x-8">
         <button class="buttonFrom from-center" @click.prevent="redirect('/aboutMe')">About Me</button>
-        <button class="buttonFrom from-center" @click.prevent="redirect('/resume')">Resume</button>
         <button class="buttonFrom from-center" @click.prevent="redirect('/skill')">Skill</button>
-        <button class="buttonFrom from-center">Portfolio</button>
+        <button class="buttonFrom from-center">Project</button>
         <button class="buttonFrom from-center">Contact</button>
       </div>
     </div>

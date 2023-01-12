@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen grid content-center container">
     <div class="text-6xl font-semibold mb-8 text-black">About Me</div>
-    <div class=" flex gap-8">
+    <div class="flex gap-8">
       <div class="space-y-8 text-black2">
         <!-- <p>
           Hello, my name is Nunthawoot(Toyo). with over 3 years of experience developing websites and building tools to
@@ -24,34 +24,24 @@
           admins to manage web content and develop features for users.
         </p>
 
-        <p>
-          I spend my time reading, gaming, and traveling whenever I'm not working on projects or coding.
-        </p>
+        <p>I spend my time reading, gaming, and traveling whenever I'm not working on projects or coding.</p>
 
         <p>
           Finally, I want to learn new things. Although sometimes I don't do very well, But I will try my best. I hope
           you like my website. Thank you.
         </p>
       </div>
-      <div class=" w-full grid justify-items-center">
-        <img src="~/static/img/myself2.jpg" class=" rounded-lg" />
+      <div class="w-full grid justify-items-center">
+        <CardAboutMe />
       </div>
     </div>
   </div>
 </template>
-<style lang="postcss" scoped>
-img {
-  height: 300px;
-  width: 300px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: all 1s ease;
+<script>
+import CardAboutMe from '~/components/aboutMe/CardAboutMe'
+export default {
+  components: {
+    CardAboutMe
+  }
 }
-img:hover {
-  filter: grayscale(0%);
-  filter: gray;
-  -webkit-filter: grayscale(0%);
-  filter: none;
-  transition: 1s ease;
-}
-</style>
+</script>

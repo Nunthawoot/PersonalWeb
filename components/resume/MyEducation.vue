@@ -14,7 +14,7 @@
 import EducationCard from '~/components/resume/EducationCard'
 export default {
   components: {
-    EducationCard,
+    EducationCard
   },
   data() {
     return {
@@ -22,12 +22,11 @@ export default {
         {
           year: '2015',
           name: 'Suranaree university of technology',
-          degrees: 'Bachelor of Engineering Program in Computer Engineering',
-          description:
-            'Duis posuere, quam non imperdiet egestas, eros enim mattis mauris, in posuere lacus arcu quis felis. Etiam interdum erat non enim venenatis fermentum.',
-        },
-      ],
+          degrees: 'Computer Engineering',
+          description: []
+        }
+      ]
     }
-  },
+  }
 }
 </script>

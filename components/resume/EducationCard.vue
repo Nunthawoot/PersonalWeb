@@ -7,8 +7,10 @@
 
     <!-- <div>{{ yearProps }}</div> -->
     <div class="p-4">
-      <div class="font-semibold text-black2">{{ degreesProps }}</div>
-      <div class="text-sm">{{ descriptionProps }}</div>
+      <div class="font-semibold text-black2">{{ degreesProps }} @{{ nameProps }}</div>
+      <div v-for="(item, index) in descriptionProps" :key="index">
+        <div>{{ item }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -28,8 +30,8 @@ export default {
       default: 'degreesProps'
     },
     descriptionProps: {
-      type: String,
-      default: 'descriptionProps'
+      type: Array,
+      default: () => []
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
-  <div class="grid content-center bg-gold min-h-screen container">
+  <div class="grid content-center bg-gold min-h-screen">
     <div class="relative w-full items-center">
-      <p class="text-base font-medium text-black50">Hello World, I'm </p>
+      <p class="text-base font-medium text-black50">Hello World, I'm</p>
       <!-- <p class="text-gold">Hello, I'm</p> -->
       <!-- <div class="content relative -mt-6">
         <h2 class="font-semibold text-6xl absolute">Nunthawoot Saenchaiyaphum</h2>
@@ -21,7 +21,7 @@
 
       <div class="py-8">
         <button
-          class="bg-white2 text-black rounded-full px-6 py-3 text-sm shadow-md hover:bg-blue-500 hover:text-gold cursor-pointer"
+          class="font-semibold bg-white2 text-black rounded-full px-6 py-3 text-sm shadow-md hover:bg-blue-500 hover:text-gold100 cursor-pointer"
         >
           Contact
         </button>

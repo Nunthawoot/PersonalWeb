@@ -36,7 +36,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     // '@nuxtjs/tailwindcss',
-    '@nuxt/postcss8'
+    '@nuxt/postcss8',
+    '@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -50,5 +51,9 @@ export default {
         autoprefixer: {}
       }
     }
+  },
+  env: {
+    MAILJET_API_KEY: process.env.MAILJET_API,
+    MAILJET_SECRET_KEY: process.env.MAILJET_SK
   }
 }

@@ -1,13 +1,13 @@
 <template>
   <article class="scroller">
-    <section><MyHome /></section>
-    <section id="skill" class="bg-white2">
-      <MySkill />
+    <section class="container"><MyHome /></section>
+    <section id="skill" class="flex">
+      <div class="container flex gap-8">
+        <MySkill class=" bg-gold50 px-8" />
+        <MyResume />
+      </div>
     </section>
-    <section>
-      <MyResume />
-    </section>
-    <section>
+    <section class="container">
       <MyContact />
     </section>
   </article>
